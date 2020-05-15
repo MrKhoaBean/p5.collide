@@ -1,5 +1,5 @@
 {
-  "name": "p5.collide",
+  "name": "p5collide",
   "version": "1.0.0",
   "description": "a module that check collisions",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/MrKhoaBean/p5.collide.js.git"
   },
   "keywords": [
-    "p5.collide",
+    "p5collide",
     "p5",
     "collide",
     "check collide",
