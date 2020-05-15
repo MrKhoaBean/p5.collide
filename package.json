@@ -1,0 +1,30 @@
+{
+  "name": "p5.collide",
+  "version": "1.0.0",
+  "description": "a module that check collisions",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrKhoaBean/p5.collide.js.git"
+  },
+  "keywords": [
+    "p5.collide",
+    "p5",
+    "collide",
+    "check collide",
+    "collision",
+    "2dcollide",
+    "2dcollision",
+    "p5 collision",
+    "p5 module"
+  ],
+  "author": "bmoren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrKhoaBean/p5.collide.js/issues"
+  },
+  "homepage": "https://github.com/MrKhoaBean/p5.collide.js#readme"
+}
