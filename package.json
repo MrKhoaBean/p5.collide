@@ -1,6 +1,6 @@
 {
   "name": "p5collide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a module that check collisions",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "author": "bmoren",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MrKhoaBean/p5.collide.js/issues"
+    "url": "https://github.com/MrKhoaBean/p5.collide/issues"
   },
-  "homepage": "https://github.com/MrKhoaBean/p5.collide.js#readme"
+  "homepage": "https://github.com/MrKhoaBean/p5.collide#readme"
 }
