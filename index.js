@@ -379,6 +379,17 @@ const collidePointPoint = function(x, y, x2, y2, buffer) {
     return false;
 };
 
+const collide = function(object1, object2) {
+    let collideFunc1 = collide[`collide${object1.type}${object2.type}`];
+    let collideFunc2 = collide[`collide${object2.type}${object1.type}`];
+
+    if (collideFunc1) {
+        return collideFunc1(...object1.data, ...object2.data);
+    } else {
+        return collideFunc2(...object2.data, ...object1.data)
+    }
+}
+
 module.exports = {
     dist,
     collideRectRect,
@@ -397,5 +408,6 @@ module.exports = {
     collideLinePoly,
     collidePolyPoly,
     collidePointTriangle,
-    collidePointPoint
+    collidePointPoint,
+    collide
 };
