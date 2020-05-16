@@ -18,7 +18,6 @@ npm install p5collide
 
 ##### 2D Collision Detection
   + [collideAll()](#collideAll)
-
   + [collidePointPoint()](#other-p5collides-function-examples--documentation)
   + [collidePointCircle()](#other-p5collides-function-examples--documentation)
   + [collidePointEllipse()](#other-p5collides-function-examples--documentation)
@@ -38,63 +37,63 @@ npm install p5collide
   + [collidePointTriangle()](#other-p5collides-function-examples--documentation)
 
 ## collideAll()
-  #### 1) Usage
-  With "Rect":
-  ```javascript
-  const Rect = {
-    type: "Rect",
-    data: [x, y, width, height]
-  }
-  ```
-  With "Circle":
-  ```javascript
-  const Circle = {
-    type: "Circle",
-    data: [x, y, diameters]
-  }
-  ```
-  With "Point":
-  ```javascript
-  const Point = {
-    type: "Point",
-    data: [x, y]
-  }
-  ```
-  With "Ellipse":
-  ```javascript
-  const Ellipse = {
-    type: "Ellipse",
-    data: [x, y, width, height]
-  }
-  ```
-  With "Line":
-  ```javascript
-  const Line = {
-    type: "Line",
-    data: [x1, y1, x2, y2, buffer]
-  }
-  ```
-  With "Poly":
-  ```javascript
-  const PolyData = [
-    { x1, y1 },
-    { x2, y2 },
-    { x3, y3 },
-    { x4, y4 }
-  ]
-  const Poly = {
-    type: "Poly",
-    data: [PolyData]
-  }
-  ```
-  With "Triangle":
-  ```javascript
-  const Triangle = {
-    type: "Triangle",
-    data: [x1, y1, x2, y2, x3, y3]
-  }
-  ```
-  #### 2) Example
+#### 1. Usage
+With "Rect":
+```javascript
+const Rect = {
+  type: "Rect",
+  data: [x, y, width, height]
+}
+```
+With "Circle":
+```javascript
+const Circle = {
+  type: "Circle",
+  data: [x, y, diameters]
+}
+```
+With "Point":
+```javascript
+const Point = {
+  type: "Point",
+  data: [x, y]
+}
+```
+With "Ellipse":
+```javascript
+const Ellipse = {
+  type: "Ellipse",
+  data: [x, y, width, height]
+}
+```
+With "Line":
+```javascript
+const Line = {
+  type: "Line",
+  data: [x1, y1, x2, y2, buffer]
+}
+```
+With "Poly":
+```javascript
+const PolyData = [
+  { x1, y1 },
+  { x2, y2 },
+  { x3, y3 },
+  { x4, y4 }
+]
+const Poly = {
+  type: "Poly",
+  data: [PolyData]
+}
+```
+With "Triangle":
+```javascript
+const Triangle = {
+  type: "Triangle",
+  data: [x1, y1, x2, y2, x3, y3]
+}
+```
+#### 2. Example
 ```javascript
 const Collides = require("p5collide");
 
@@ -110,14 +109,14 @@ let object2 = {
 
 console.log(Collides.collideAll(object1, object2)); // Yes, it's true
 ```
-  #### 3) List possible object type
-  + Rect
-  + Circle
-  + Point
-  + Ellipse
-  + Line
-  + Poly
-  + Triangle
+#### 3. List possible object type
++ Rect
++ Circle
++ Point
++ Ellipse
++ Line
++ Poly
++ Triangle
 
 ## Other p5collide's function examples & documentation
 You can see it here: https://github.com/bmoren/p5.collide2D
