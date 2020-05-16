@@ -379,18 +379,7 @@ const collidePointPoint = function(x, y, x2, y2, buffer) {
     return false;
 };
 
-const collide = function(object1, object2) {
-    let collideFunc1 = collide[`collide${object1.type}${object2.type}`];
-    let collideFunc2 = collide[`collide${object2.type}${object1.type}`];
-
-    if (collideFunc1) {
-        return collideFunc1(...object1.data, ...object2.data);
-    } else {
-        return collideFunc2(...object2.data, ...object1.data)
-    }
-}
-
-module.exports = {
+let collides = {
     dist,
     collideRectRect,
     collideRectCircle,
@@ -408,6 +397,50 @@ module.exports = {
     collideLinePoly,
     collidePolyPoly,
     collidePointTriangle,
-    collidePointPoint,
-    collide
-};
+    collidePointPoint
+}
+
+const list = [
+    'Rect',
+    'Circle',
+    'Point',
+    'Ellipse',
+    'Line',
+    'Poly',
+    'Triangle'
+]
+
+const collideAll = function(object1, object2) {
+    let { type: type1, data: data1 } = object1;
+    let { type: type2, data: data2 } = object2;
+    type1 = type1.toLowerCase().replace(/^(.?)/, function($1) {
+        return $1.toUpperCase();
+    });
+    type2 = type2.toLowerCase().replace(/^(.?)/, function($1) {
+        return $1.toUpperCase();
+    });
+
+    let ok = true;
+    if (list.indexOf(type1) == -1) {
+        ok = false;
+        console.error(`Not found ${type1} in possible list [${list.toString()}]`);
+    }
+    if (list.indexOf(type2) == -1) {
+        ok = false;
+        console.error(`Not found "${type2}" in possible list [${list.toString()}]`);
+    }
+    if (!ok)
+        return false;
+    let collideFunc1 = collides[`collide${type1}${type2}`];
+    let collideFunc2 = collides[`collide${type2}${type1}`];
+
+    if (collideFunc1) {
+        return collideFunc1(...data1, ...data2);
+    } else {
+        return collideFunc2(...data2, ...data1)
+    }
+}
+
+collides.collideAll = collideAll;
+
+module.exports = collides;
