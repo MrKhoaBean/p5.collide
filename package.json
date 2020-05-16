@@ -1,6 +1,6 @@
 {
   "name": "p5collide",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "a module that check collisions",
   "main": "index.js",
   "scripts": {

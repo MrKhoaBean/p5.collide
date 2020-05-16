@@ -17,7 +17,7 @@ npm install p5collide
 ## Table of Contents
 
 ##### 2D Collision Detection
-  + [collideAll()](#collideAll)
+  + [collideAll()](#collideall)
   + [collidePointPoint()](#other-p5collides-function-examples--documentation)
   + [collidePointCircle()](#other-p5collides-function-examples--documentation)
   + [collidePointEllipse()](#other-p5collides-function-examples--documentation)
