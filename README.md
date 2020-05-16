@@ -38,7 +38,7 @@ npm install p5collide
   + [collidePointTriangle()](#p5collide-examples--documentation)
 
 ## collideAll()
-  #### usage
+  #### 1) Usage
   With "Rect":
   ```javascript
   const Rect = {
@@ -94,7 +94,7 @@ npm install p5collide
     data: [x1, y1, x2, y2, x3, y3]
   }
   ```
-  #### example
+  #### 2) Example
 ```javascript
 const Collides = require("p5collide");
 
@@ -110,7 +110,7 @@ let object2 = {
 
 console.log(Collides.collideAll(object1, object2)); // Yes, it's true
 ```
-  #### List possible object type
+  #### 3) List possible object type
   + Rect
   + Circle
   + Point
