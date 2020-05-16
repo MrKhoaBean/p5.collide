@@ -17,27 +17,25 @@ npm install p5collide
 ## Table of Contents
 
 ##### 2D Collision Detection
-  + [collidePointPoint()](#document)
-  + [collidePointCircle()](#document)
-  + [collidePointEllipse()](#document)
-  + [collidePointRect()](#document)
-  + [collidePointLine()](#document)
-  + [collideRectRect()](#document)
-  + [collideCircleCircle()](#document)
-  + [collideRectCircle()](#document)
-  + [collideLineLine()](#document)
-  + [collideLineCircle()](#document)
-  + [collideLineRect()](#document)
-  + [collidePointPoly()](#document)
-  + [collideCirclePoly()](#document)
-  + [collideRectPoly()](#document)
-  + [collideLinePoly()](#document)
-  + [collidePolyPoly()](#document)
-  + [collidePointTriangle()](#document)
+  + [collidePointPoint()](#p5collide-examples--documentation)
+  + [collidePointCircle()](#p5collide-examples--documentation)
+  + [collidePointEllipse()](#p5collide-examples--documentation)
+  + [collidePointRect()](#p5collide-examples--documentation)
+  + [collidePointLine()](#p5collide-examples--documentation)
+  + [collideRectRect()](#p5collide-examples--documentation)
+  + [collideCircleCircle()](#p5collide-examples--documentation)
+  + [collideRectCircle()](#p5collide-examples--documentation)
+  + [collideLineLine()](#p5collide-examples--documentation)
+  + [collideLineCircle()](#p5collide-examples--documentation)
+  + [collideLineRect()](#p5collide-examples--documentation)
+  + [collidePointPoly()](#p5collide-examples--documentation)
+  + [collideCirclePoly()](#p5collide-examples--documentation)
+  + [collideRectPoly()](#p5collide-examples--documentation)
+  + [collideLinePoly()](#p5collide-examples--documentation)
+  + [collidePolyPoly()](#p5collide-examples--documentation)
+  + [collidePointTriangle()](#p5collide-examples--documentation)
 
-## p5collide examples & documentation
-
-#### document
+## P5collide examples & documentation
 You can see it here: https://github.com/bmoren/p5.collide2D
 
 ## Source
