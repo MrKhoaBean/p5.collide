@@ -1,6 +1,6 @@
 {
   "name": "p5collide",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "a module that check collisions",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MrKhoaBean/p5.collide.js.git"
+    "url": "git+https://github.com/MrKhoaBean/p5collide.git"
   },
   "keywords": [
     "p5collide",
@@ -21,10 +21,10 @@
     "p5 collision",
     "p5 module"
   ],
-  "author": "bmoren",
+  "author": "MrKhoaBean",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MrKhoaBean/p5.collide/issues"
+    "url": "https://github.com/MrKhoaBean/p5collide/issues"
   },
-  "homepage": "https://github.com/MrKhoaBean/p5.collide#readme"
+  "homepage": "https://github.com/MrKhoaBean/p5collide#readme"
 }
