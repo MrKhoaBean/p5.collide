@@ -39,4 +39,4 @@ npm install p5collide
 You can see it here: https://github.com/bmoren/p5.collide2D
 
 ## Source
-https://github.com/bmoren/p5collide2D
+https://github.com/bmoren/p5.collide2D
